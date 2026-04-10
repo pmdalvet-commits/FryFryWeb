@@ -1,0 +1,96 @@
+:root {
+    --gold: #FFD700;
+    --fry-red: #FF4545; /* O fundo que o mestre pediu */
+    --glass: rgba(0, 0, 0, 0.45);
+}
+
+body {
+    background: radial-gradient(circle, var(--fry-red) 0%, #b32d2d 100%);
+    color: white;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-logo {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 0 15px var(--gold));
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.5s;
+}
+
+.main-logo:hover {
+    transform: rotate(360deg); /* O logo gira quando o mestre passa o mouse */
+}
+
+h1 {
+    color: var(--gold);
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 30px;
+}
+
+.card {
+    background: var(--glass);
+    padding: 40px;
+    border-radius: 30px;
+    border: 2px solid var(--gold);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.stars {
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.stars span {
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgba(255,255,255,0.2);
+}
+
+.stars span:hover, .stars span.active {
+    color: var(--gold);
+    text-shadow: 0 0 25px var(--gold);
+    transform: scale(1.2);
+    display: inline-block;
+}
+
+#status-text {
+    font-weight: bold;
+    color: var(--gold);
+    min-height: 24px;
+}
+
+.hidden { display: none; }
+
+#details {
+    font-size: 0.85rem;
+    text-align: left;
+    margin-top: 20px;
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.secure { color: #00ff00; font-weight: bold; }
+
+hr { border: 0; border-top: 1px solid rgba(255,215,0,0.3); margin: 15px 0; }

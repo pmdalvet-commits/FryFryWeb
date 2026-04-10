@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fry-Fry Corp | Sistema de Gestão</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.ico" alt="Fry-Fry Logo" class="main-logo">
+            <h1>FRY-FRY CORP</h1>
+            <p class="tagline">Heitorioextrobyte Power System</p>
+        </header>
+
+        <section class="card">
+            <h2>Avaliação de Qualidade</h2>
+            <p>Como estava a crocância hoje?</p>
+            
+            <div class="stars" id="star-rating">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
+            </div>
+
+            <p id="status-text">Aguardando interação...</p>
+            
+            <div id="details" class="hidden">
+                <hr>
+                <p>🛡️ <strong>Check SPCCI:</strong> <span class="secure">AUTENTICADO</span></p>
+                <p>📅 <strong>Registro:</strong> <span id="current-date"></span></p>
+                <p>📍 <strong>Servidor:</strong> SDS-AMD64</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Fry-Fry Corp - Todos os direitos reservados à Heitor</p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
